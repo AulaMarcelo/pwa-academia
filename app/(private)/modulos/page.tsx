@@ -86,8 +86,8 @@ export default function Exercise(){
     return(
         <div className='flex flex-col items-center justify-center mt-9 ml-2 mr-2 gap-4 mb-28'>
               <h1 className='font-bold text-xl mb-4'>Módulos</h1>
-            {modulos.map(modulo =>(
-               <Card className="pt-5 pb-5 pe-1 ps-1 w-full md:w-[600px] ">
+            {modulos.map((modulo,key) =>(
+               <Card key={key} className="pt-5 pb-5 pe-1 ps-1 w-full md:w-[600px] ">
                 <div className="flex items-center justify-center w-full mb-4  ps-5 pe-4">
                     
                         <div className="flex flex-1 items-center justify-center">
